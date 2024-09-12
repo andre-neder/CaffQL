@@ -35,7 +35,7 @@ set_target_properties(caffql-cli
 	OUTPUT_NAME caffql
 )
 
-option(BUILD_TESTING "Enable tests" ON)
+option(BUILD_TESTING "Enable tests" OFF)
 
 if(BUILD_TESTING)
 	enable_testing()
