@@ -116,7 +116,7 @@ std::vector<Type> sortCustomTypesByDependencyOrder(std::vector<Type> const & typ
             addDependency(possibleType);
         }
 
-        typesToDependencies[type.name] = {type, move(dependencies)};
+        typesToDependencies[type.name] = {type, std::move(dependencies)};
     }
 
     vector<Type> sortedTypes;
